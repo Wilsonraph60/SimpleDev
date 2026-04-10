@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Threat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <nav class="bg-red-900 text-base pt-6 py-6 w-full flex justify-between items-center">
+           <h1 class="font-serif text-white font-bold text-3xl">WilsTech</h1>
+           <ul class="hidden md:flex gap-6 p-4" >
+                <li><a href="#" class="text-white hover:text-gray-300 cursor-pointer"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300 cursor-pointer"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300 cursor-pointer"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300 cursor-pointer
+                "><i class="fas fa-map-marker-alt"></i> Location</a></li>
+           </ul>
+
+                   <!--mobile menu -->
+              <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <i class="fas fa-bars text-white text-2xl"></i>
+                </button>
+                <ul id="mobile-menu" class="hidden md:hidden bg-red-900 text-white p-4">
+                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                </ul>
+            </div>
+
+    </nav>
+
+
+    <div class="flex flex-col md:flex-row items-center justify-center bg-rose-100">
+        <div class="text-center md:text-center p-6">
+            <h1 class="italic text-8xl font-bold mb-4 text-[#7B3F00]">WilsTech</h1>
+            <p class="font-serif text-lg mb-6 font-bold">Beyond the Code, Before the Curve.</p>
+            <h2 class="font-serif text-4xl font-bold mb-4">About us</h2>
+            <p class=" font-serif text-medium mb-4 md:w-auto">
+                At WilsTech, we are dedicated to providing cutting edge technology solutions that empower businesses and individuals alike.
+                 Our mission is to innovate and deliver high-quality products and services that meet the evolving needs of our customers.
+                  With a team of passionate experts, we strive to create a future where technology enhances every aspect of life.</p> <br> <br>
+        <a href="#" class="bg-red-900 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700 transition duration-300">Learn More</a>
+        </div> 
+    </div>
+
+  
+    <footer class="bg-gray-800 text-white py-8">
+                <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-center md:text-center">&copy; 2026 WilsTech. All rights reserved.</p>
+                    <div class="flex gap-4 mt-4 md:mt-0">
+                        <a href="#" class="text-white hover:text-gray-300 rounded-full"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 rounded-full"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 rounded-full"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300 rounded-full"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            </script>
+    </body>
+</html>
