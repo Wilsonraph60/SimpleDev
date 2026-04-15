@@ -10,8 +10,14 @@
   <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
-    <nav class="bg-red-900 text-base pt-6 py-6 w-full flex justify-between items-center">
-           <h1 class="hidden md:font-serif text-white font-bold text-3xl p-4">WilsTech</h1>
+    <nav class="bg-red-900 text-base ">
+        <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+        <div class="font-serif text-white text-xl font-bold">
+        WilsTech
+      </div>
+
+           
            <ul class="hidden md:flex gap-6 p-4" >
                 <li><a href="#" class="text-white hover:text-gray-300 cursor-pointer"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#" class="text-white hover:text-gray-300 cursor-pointer"><i class="fas fa-info-circle"></i> About</a></li>
@@ -22,19 +28,22 @@
 
                    <!--mobile menu -->
             
-              <div class="md:hidden">
-                 <h1 class="font-serif text-white font-bold text-2xl p-2">WilsTech</h1> 
+              <div class="md:hidden"> 
                 <button id="menu-btn" class=" focus: outline-none">
                     <i class="fas fa-bars text-white text-2xl p-4 text-right"></i>
                 </button>
-                <ul id="mobile-menu" class=" md:hidden flex flex-col items-start bg-red-900 text-white p-6 pt-20 space-y-6 text-lg w-full" >
-                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="#" class="block py-2 hover:text-gray-300"><i class="fas fa-map-marker-alt"></i> Location</a></li>
-                </ul>
+              </div>
+            
+        </div>
+    </div>
+            
+                <div class=" id="mobile-menu" md:hidden px-4 pb-4" >
+                    <a href="#" class="block py-2 hover:text-gray-300">Home</a></li>
+                    <a href="#" class="block py-2 hover:text-gray-300">About</a>
+                    <a href="#" class="block py-2 hover:text-gray-300">Contact</a>
+                    <a href="#" class="block py-2 hover:text-gray-300">Location</a>
+                </div>
             </div>
-
     </nav>
 
 
